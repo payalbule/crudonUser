@@ -1,4 +1,4 @@
-package com.bank.example.Banking.model;
+package com.bank.example.Banking.Entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,8 +18,6 @@ import lombok.Setter;
 @Builder
 @Entity
 @Table
-@Setter
-@Getter
 public class User {
 	@Id
     @GeneratedValue
@@ -28,11 +26,6 @@ public class User {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
-	public void setId(Integer id2) {
-		this.id=id2;
-		
-	}
-	
 
    
 }
